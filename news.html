@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>news</title>
+	<link rel="stylesheet" type="text/css" href="./CSS/css1.css">
+	<link rel="stylesheet" type="text/css" href="./CSS/header-footer.css">
+
+	<!-- <style type="text/css">
+	 .news-img{
+	 	height: 244px;width: 100%;min-width: 1200px;background: url("./images/news/news-center.jpg");
+	 } 
+	 .page{
+	 	list-style: none ; text-align: center;
+	 }
+	 .page li{
+
+	 	display: inline-block; vertical-align: top;
+	 	border: 1px solid #0099cc;width: 34px; height: 34px;line-height:34px;font-size: 11.7px;color: #666666;margin:25px 10px;
+	 }
+	 .page li:first-child, .page li:last-child{
+	 	width: 64px;
+	 }
+	 .li-click{
+	 	background: #59b2e0; border: none;
+	 }
+	 .div{
+	 	height: 80px;
+	 }
+	 .page .left{ float: left; width: 64px;}
+	 .page .right{ float:right; }
+	.new-news .news-p1{
+	 	font-size:12px;color: #999999;
+	 }
+	</style> -->
+
+</head>
+<body>
+	<div id="header"></div>
+	<div class="news-img"></div>
+
+	<div class="news">
+	<p class="font1">新闻中心</p>
+	<p class="font2">NEWS CENTER</p>
+	<ul class="news-ul">
+		<li><a class="blue" href="javascript:;">全部</a></li>
+		<li><a href="javascript:;">行业新闻</a></li>
+		<li><a href="javascript:;">公司新闻</a></li>
+		<li><a href="javascript:;">媒体关注</a></li>
+	</ul>
+	<div class="news-bigbox">
+	<div class="news-box">
+		<div class="news-show">
+			<div class="news-top checked">
+				<p>06/20</p><br/><span>2017</span>
+			<!-- 	<hr class="Isborder"> -->
+				
+			</div>
+
+			<h4 class="h4">食品级硅橡胶介绍</h4>
+			<p>一般有机硅可以分为加成型硅胶和缩合型硅胶。其中加成型硅橡胶是属于食品级硅橡胶，比缩合型硅橡胶更加环保，性能更好...</p>
+			<a href="javascript:;">More></a>
+		</div>
+		
+		<div class="news-show">
+			<div class="news-top">
+				<p>06/17</p><br/><span>2017</span>
+				
+			</div>
+				<h4 class="h4">食品级硅橡胶介绍</h4>
+				<p>一般有机硅可以分为加成型硅胶和缩合型硅胶。其中加成型硅橡胶是属于食品级硅橡胶，比缩合型硅橡胶更加环保，性能更好...</p>
+				<a href="javascript:;">More</a>
+		</div>
+	
+		<div class="news-show">
+			<div class="news-top">
+				<p>06/13</p><br/><span>2017</span>
+			
+			</div>
+				<h4 class="h4">食品级硅橡胶介绍</h4>
+				<p>一般有机硅可以分为加成型硅胶和缩合型硅胶。其中加成型硅橡胶是属于食品级硅橡胶，比缩合型硅橡胶更加环保，性能更好...</p>
+				<a href="javascript:;">More</a>
+			</div>
+
+		</div>
+		<div class="news-box">
+		<div class="news-show">
+			<div class="news-top">
+				<p>06/12</p><br/><span>2017</span>
+			<!-- 	<hr class="Isborder"> -->
+				
+			</div>
+			<h4 class="h4">食品级硅橡胶介绍</h4>
+			<p>一般有机硅可以分为加成型硅胶和缩合型硅胶。其中加成型硅橡胶是属于食品级硅橡胶，比缩合型硅橡胶更加环保，性能更好...</p>
+			<a href="javascript:;">More></a>
+		</div>
+
+		<div class="news-show">
+			<div class="news-top">
+				<p>06/10</p><br/><span>2017</span>
+				
+			</div>
+				<h4 class="h4">食品级硅橡胶介绍</h4>
+				<p>一般有机硅可以分为加成型硅胶和缩合型硅胶。其中加成型硅橡胶是属于食品级硅橡胶，比缩合型硅橡胶更加环保，性能更好...</p>
+				<a href="javascript:;">More</a>
+		</div>
+	
+		<div class="news-show">
+			<div class="news-top">
+				<p>06/09</p><br/><span>2017</span>
+			
+			</div>
+				<h4 class="h4">食品级硅橡胶介绍</h4>
+				<p>一般有机硅可以分为加成型硅胶和缩合型硅胶。其中加成型硅橡胶是属于食品级硅橡胶，比缩合型硅橡胶更加环保，性能更好...</p>
+				<a href="javascript:;">More</a>
+		</div>
+	</div>
+	<div class="paging">
+	<ul class="page">
+		<li>上一页</li>
+		<li>1</li>
+		<li>2</li>
+		<li>3</li>
+		<li>...</li>
+		<li>下一页</li>
+	</ul>
+	</div>
+</div>
+</div>
+
+<div id="footer"></div>
+<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript">
+	
+
+	// var $a=$(".news-ul a");
+	
+		$(".news-ul a:eq(1)").click(function(){
+			
+			$(".news-bigbox").load("news-details.html");
+		
+		})
+$(function(){
+		$("#header").load("header.html");
+		$("#footer").load("footer.html");
+	})
+	
+</script>
+</body>
+</html>

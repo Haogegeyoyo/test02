@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta http-equiv="content-type" content="txt/html; charset=utf-8"/>
+	<link rel="stylesheet" type="text/css" href="./CSS/header-footer.css">
+	<link rel="stylesheet" type="text/css" href="./CSS/css1.css">
+	<style type="text/css">
+		/**{padding: 0; margin: 0; font-family: "微软雅黑";}
+		#img-news{width:100%;height:425px;overflow: hidden; margin: auto; text-align: center; position:relative;}
+		#list{  width:100%;margin:0 auto; position:relative;}
+
+		#list li{list-style:none;transition: all 0.6s ease-out; position:absolute; text-align: center; width:100%;margin: auto;}
+			 	
+			 #list img{width:100%;}
+		.p3{
+					-webkit-transform:translate(-1200px,0px);
+                -moz-transform: translate(-1200px,0px);
+                -ms-transform: translate(-1200px,0px);
+                -o-transform:translate(-1200px,0px);
+                transform:translate(-1200px,0px); z-index:-2; 
+              	/*opacity: 0;/透明度* /
+                /*transform-origin:0 50%;*/
+            		/*}*/
+      /*  .p2{ -webkit-transform:translate(0px,0px);
+                -moz-transform: translate(0px,0px);
+                -ms-transform: translate(0px,0px);
+                -o-transform:translate(0px,0px);
+                transform:translate(0px,0px); 
+                z-index:20;}
+		.p1{-webkit-transform:translate(1200px,0px);
+                -moz-transform: translate(1200px,0px);
+                -ms-transform: translate(1200px,0px);
+                -o-transform:translate(1200px,0px);
+                transform:translate(1200px,0px);
+                z-index: 1;}
+              #dot-div{ width:200px;height: 60px; position: absolute;
+             top:86%; 	left:0;right: 0; margin:0 auto;z-index: 100;
+              }*/
+              	/*left:0;right: 0; margin:0 auto;为绝对定位的居中显示*/
+           /*   #dot-div a{display: inline-block;width: 20px;height: 20px; background: url("./images/index/dot.png"); margin: 0 18px;}	
+            #dot-div .show { background:url("./images/index/dot-later.png");  }
+            .btn{ display:block;width:40px;height: 80px;background:url("./images/index/left.png"); position:absolute;z-index:100; top: 0;bottom:0;margin:auto 0; }
+            .perv{ left:17%; }
+            .next{background: url("./images/index/right.png");right:17%;}
+            .center{ width: 100%;height: 290px;}
+            .center .center-ul{list-style:none;width:1000px;height:280px;margin:50px auto;text-align:center;}
+            .center li{
+            		width: 220px; height: 280px;display: inline-block;
+            		margin: 0 50px;
+            		}
+            .about-us .img1{
+            	width: 120px;height: 65px;
+            	margin: 100px auto;display: block;
+            }
+	        .about-us .company{
+	        	width:62%;height: 310px;margin: 0 auto;
+	        	background: url("./images/index/brief.jpg") no-repeat;
+	        	background-size: 100%;
+	        	position: relative;
+	        }
+	         .about-us .company .img2{width:24%;
+	         	position: absolute; left: 5%;top:-20%;}
+	         .arrow1{
+	         	display: block; position:absolute; width: 90px; height:33px;background-image:url("./images/index/arrow1.jpg");left:61%;top:76%;
+	         }
+	         .news { text-align:center;}
+	         .news p{font-size: 22.5px;display: block;text-align:center;margin: 0 auto;color:#333333;margin-top: 50px;}
+	         .news .font2{font-family: "Arial";font-size: 18px;color: #666666;margin-top: 10px;}
+	         .news .news-ul{list-style:none;width:800px;height:50px;margin:20px auto;text-align: center;}
+
+	         .news li{display:inline-block;width:70px;height: 20px;margin: 0px 10px;}
+	         .news-ul a{
+	         	display:block;width: 100%;height: 25px;line-height: 25px;
+	         	text-decoration: none;
+	         	color: #8c8c8c;
+	         	font-size: 14px;
+	         }
+	        .news .blue,.news a:hover{*/  /*.blue优秀级比.new a 低,所以用.new .blue*/
+	         /*/*	background: #0089cf;
+	         	color: #ffffff;
+	         }
+	        
+	         .news-show{width: 20%;height: 200px;display: inline-block;margin: 0 auto; text-align:left;}
+	         .news-show .news-top{
+	         	text-align:left;border-bottom: 2px solid #d9d9d9;
+	         }
+	         .news-show .news-top p{ text-align:left;font-size: 27px;
+	         	color:#666666;}
+	         .news-top span{
+	         	font-size: 18px;color:#999999;
+	         }
+	       .news-show .checked,.news-top:hover{
+	         	border-bottom: 2px solid #51bbde;
+	         }
+	       /*  .Isborder{
+	         	height: 6px; background: red;border: none;
+	         }*/
+	        /* .h4{
+	         		font-size: 15px; color: #333333;margin-top: 15px;
+	         }
+	         .news-show p{
+	         	font-size: 13.5px;color: #999999;text-align:left;margin-top: 10px;
+	         }
+	         .news-show a{margin-top:20px; display:block;width:50px;text-decoration: none;color: #666666;}
+	         .box{
+	         	width: 70%;height: 410px;margin: 10px auto;
+	         }
+	          .box1{
+	          	width:29%;height:400px;margin:0 1%;background: #246cf6;display:inline-block;
+	          	vertical-align: top;/*顶部对齐
+	          }
+	          .yellow{
+	          	background: #f7c230;
+	          }
+	          .red{background: #f96d6a;}
+	         .box1-img{
+	         	width: 95%;height: 65%;margin-top: 10px;
+	         }
+	         .box2{width: 95%;height: 26%;margin:10px auto;color: #ffffff;border: 1px solid rgba(0,0,0,0);/*//*/透明边框*如果不加透明边框，则hover时突然加了边框，多了1px，文本位置会下移。/*/
+	         	/*border:1px solid hsla(240,70%,70%,0);*/
+	      /*   }
+	         .box2 h4{font-size: 13px;margin-top: 12px;}
+	         .box2 h5{font-size: 15px;}
+	         .box2 p{font-size: 10.5px;color:#ffffff; margin-top: 10px;}
+	         .box1 .checked,.box2:hover{
+	         	border: 1px solid #ffffff;
+	         }*/
+	</style>
+</head>
+<body>
+<div id="header">
+	</div>
+<div id="img-news">
+	<ul id="list">
+		<li class="p1"><img  src="./images/index/img1.jpg"></li>
+		<li class="p2"><img  src="./images/index/img2.jpg"></li>
+		<li class="p3"><img  src="./images/index/img3.jpg"></li>
+	</ul>
+
+	<a href="javascript:;" class="perv btn"></a>
+	<a href="javascript:;" class="next btn"></a>
+
+	<div id="dot-div">
+		<a href="#" class="show"></a>
+		<a href="javascript:;"></a>
+		<a href="javascript:;"></a>
+	</div>
+</div>
+
+<div class="center">
+		<ul class="center-ul">
+			<li><a href="javascript:;"><img src="./images/index/team.png"></a></li>
+			<li><a href="javascript:;"><img src="./images/index/banshou.png"></a></li>		
+			<li><a href="javascript:;"><img src="./images/index/house.png"></a></li>
+		</ul>
+</div>
+<div class="about-us">
+	<img  class="img1" src="./images/index/about-us.png">
+	<div class="company">
+		<img class="img2" src="./images/index/company-img.jpg">
+		<a  class="arrow1" href="javascript:;"></a>
+	</div>		
+</div>
+<div class="news">
+	<p class="font1">新闻中心</p>
+	<p class="font2">NEWS CENTER</p>
+	<ul class="news-ul">
+		<li><a class="blue" href="javascript:;">全部</a></li>
+		<li><a href="javascript:;">行业新闻</a></li>
+		<li><a href="javascript:;">公司新闻</a></li>
+		<li><a href="javascript:;">媒体关注</a></li>
+	</ul>
+	
+		<div class="news-show">
+			<div class="news-top checked">
+				<p>06/20</p><br/><span>2017</span>
+			<!-- 	<hr class="Isborder"> -->
+				
+			</div>
+			<h4 class="h4">食品级硅橡胶介绍</h4>
+			<p>一般有机硅可以分为加成型硅胶和缩合型硅胶。其中加成型硅橡胶是属于食品级硅橡胶，比缩合型硅橡胶更加环保，性能更好...</p>
+			<a href="javascript:;">More></a>
+		</div>
+
+		<div class="news-show">
+			<div class="news-top">
+				<p>06/17</p><br/><span>2017</span>
+				
+			</div>
+				<h4 class="h4">食品级硅橡胶介绍</h4>
+				<p>一般有机硅可以分为加成型硅胶和缩合型硅胶。其中加成型硅橡胶是属于食品级硅橡胶，比缩合型硅橡胶更加环保，性能更好...</p>
+				<a href="javascript:;">More</a>
+		</div>
+	
+		<div class="news-show">
+			<div class="news-top">
+				<p>06/13</p><br/><span>2017</span>
+			
+			</div>
+				<h4 class="h4">食品级硅橡胶介绍</h4>
+				<p>一般有机硅可以分为加成型硅胶和缩合型硅胶。其中加成型硅橡胶是属于食品级硅橡胶，比缩合型硅橡胶更加环保，性能更好...</p>
+				<a href="javascript:;">More</a>
+		</div>
+	
+</div>
+<div class="news">
+	<p class="font1">产品中心</p>
+	<p class="font2">PRODUCT CENTER</p>
+	<ul class="news-ul">
+		<li><a class="blue" href="javascript:;">全部产品</a></li>
+		<li><a href="javascript:;">矽列康</a></li>
+		<li><a href="javascript:;">RTV-2</a></li>
+		<li><a href="javascript:;">模具硅胶</a></li>
+	</ul>
+	<div  class="box">
+		<div class="box1 yellow">
+			<img class="box1-img" src="./images/index/3.jpg">
+			<div class="box2 checked">	
+				<h4>矽利康</h4>
+				<h5>——</h5>
+				<p>无机矽利康是一种高活性吸附材料</p>
+		</div>
+		</div>
+		<div class="box1 red">
+			<img class="box1-img" src="./images/index/2.jpg">
+			<div class="box2">	
+					<h4>RTV-2</h4>
+				<h5>——</h5>
+				<p>RTV-2具有优异的流动性</p>
+		</div>
+		</div>
+		<div class="box1">
+			<img class="box1-img" src="./images/index/1.jpg">
+			<div class="box2">
+					<h4>模具硅胶</h4>
+				<h5>——</h5>
+				<p>一般由基胶、交联剂、催化剂、填料与添加剂五个组份构成</p>
+		</div>
+		</div>
+	</div>	
+</div>
+
+<div id="footer"></div>
+<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript">
+    var cArr=['p1','p2','p3'];
+    var $a=$("#dot-div a");
+    var $next=$(".next");
+    var $perv=$(".perv");
+    var index=0;
+    var timer=setInterval(changeImg,2000);
+ 		function changeImg(){
+ 			cArr.push(cArr[0]);
+ 			cArr.shift();
+ 			$("li").each(function(i,e){
+ 				$(e).removeClass().addClass(cArr[i]); 	
+ 			})
+ 			index++;
+ 			if(index>2){index=0}
+ 				show();
+	}
+		
+		function show(){
+			$a.eq(index).addClass("show").siblings().removeClass("show");
+		}
+			// $a.each(function(){
+			// 	$(this).click(function(){
+			// 		var myindex=$(this).index();
+			// 		var b=myindex-index;
+			// 	})
+			// })
+			$next.click(function(){
+				changeImg();
+			})
+			$perv.click(function(){
+				pervImg();
+			})
+			function pervImg() {
+				cArr.unshift(cArr[2]);
+				cArr.pop();
+				$("li").each(function(i,e){
+					$(e).removeClass().addClass(cArr[i]);
+				})
+				index--;
+ 			if(index<0){index=2}
+				show();
+			}
+			$("#img-news").mouseover(function(){
+				clearInterval(timer);
+			})
+			$("#img-news").mouseleave(function(){
+				timer=setInterval(changeImg,2000);
+			})
+			
+			$(function(){
+			$("#header").load("header.html");
+			$("#footer").load("footer.html");
+				})
+
+</script>
+</body>
+</html>

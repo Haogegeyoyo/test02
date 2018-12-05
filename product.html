@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>product</title>
+	<link rel="stylesheet" type="text/css" href="./CSS/css1.css">
+	<link rel="stylesheet" type="text/css" href="./CSS/header-footer.css">
+	<style type="text/css">
+		.product-img{
+		height: 242px;	width: 100%;min-width: 1200px;background: url("./images/product/product.jpg") no-repeat;background-size: 100%;position: relative;
+		}
+		.font{width: 156px;height: 50px;position: absolute;bottom: 0;top: 0;left:0;right:0;margin: auto;text-align: center;}
+		.product-img h1{
+			font-family: "宋体";font-size: 34px;color: #ffffff;
+			text-align: center;
+		}
+		 .product-img h3{margin:100px 0 0 50px;}
+
+		 p{font-size: 10.5px; color: #ffffff;}
+		.product-img  p{
+			display: block; width: 100%;
+			margin:auto;padding-bottom: 10px;
+			font-family: "Arial";font-size: 20px;
+			border-bottom: 2.5px solid #ffffff; 
+			
+		}
+	</style>
+</head>
+<body>
+	<div class="header"></div>
+		<div class="product">
+			<div class="product-img">
+				<div class="font">
+				<h1>产品中心</h1>
+				<p>PRODUCT</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="news">
+		<p class="font1">产品中心</p>
+	 	<p class="font2">PRODUCT CENTER</p>
+		<ul class="news-ul">
+			<li><a class="blue" href="javascript:;">全部产品</a></li>
+			<li><a href="javascript:;">矽列康</a></li>
+			<li><a href="javascript:;">RTV-2</a></li>
+			<li><a href="javascript:;">模具硅胶</a></li>
+	  </ul>
+	    <div id="new-1">
+			<div  class="box">
+				<div class="box1 yellow">
+					<img class="box1-img" src="./images/index/3.jpg">
+					<div class="box2 checked">	
+						<h4>矽利康</h4>
+						<h5>——</h5>
+						<p>无机矽利康是一种高活性吸附材料</p>
+					</div>
+			</div>
+		<div class="box1 red">
+			<img class="box1-img" src="./images/index/2.jpg">
+				<div class="box2">	
+						<h4>RTV-2</h4>
+					<h5>——</h5>
+					<p>RTV-2具有优异的流动性</p>
+				</div>
+		</div>
+		<div class="box1">
+			<img class="box1-img" src="./images/index/1.jpg">
+			<div class="box2">
+					<h4>模具硅胶</h4>
+					<h5>——</h5>
+					<p>一般由基胶、交联剂、催化剂、填料与添加剂五个组份构成</p>
+			</div>
+		</div>
+	</div>
+	
+	<div  class="box">
+			<div class="box1 yellow">
+				<img class="box1-img" src="./images/index/3.jpg">
+				<div class="box2 ">	
+					<h4>矽利康</h4>
+					<h5>——</h5>
+					<p>无机矽利康是一种高活性吸附材料</p>
+				</div>
+			</div>
+
+			<div class="box1 red">
+				<img class="box1-img" src="./images/index/2.jpg">
+				<div class="box2">	
+					<h4>RTV-2</h4>
+					<h5>——</h5>
+					<p>RTV-2具有优异的流动性</p>
+				</div>
+			</div>
+
+			<div class="box1">
+				<img class="box1-img" src="./images/index/1.jpg">
+				<div class="box2">
+					<h4>模具硅胶</h4>
+					<h5>——</h5>
+					<p>一般由基胶、交联剂、催化剂、填料与添加剂五个组份构成</p>
+				</div>
+			</div>
+		</div>	
+		<div  class="box">
+			<div class="box1 yellow">
+				<img class="box1-img" src="./images/index/3.jpg">
+				<div class="box2 ">	
+					<h4>矽利康</h4>
+					<h5>——</h5>
+					<p>无机矽利康是一种高活性吸附材料</p>
+				</div>
+			</div>
+
+			<div class="box1 red">
+				<img class="box1-img" src="./images/index/2.jpg">
+				<div class="box2">	
+					<h4>RTV-2</h4>
+					<h5>——</h5>
+					<p>RTV-2具有优异的流动性</p>
+				</div>
+			</div>
+
+			<div class="box1">
+				<img class="box1-img" src="./images/index/1.jpg">
+				<div class="box2">
+					<h4>模具硅胶</h4>
+					<h5>——</h5>
+					<p>一般由基胶、交联剂、催化剂、填料与添加剂五个组份构成</p>
+				</div>
+			</div>
+		</div>	
+		<div class="paging">
+	<ul class="page">
+		<li>上一页</li>
+		<li>1</li>
+		<li>2</li>
+		<li>3</li>
+		<li>...</li>
+		<li>下一页</li>
+	</ul>
+	</div>
+	</div>
+   </div>
+ <div class="footer"></div>
+ <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript">
+
+$(function(){
+	$(".header").load("header.html");
+	$(".footer").load("footer.html");
+	})
+
+	
+	$(".news-ul a:eq(1)").click(function(){
+			
+			$("#news-1").load("news-details.html");
+		
+		})
+</script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>contact-us</title>
+	<link rel="stylesheet" type="text/css" href="./CSS/css1.css">
+	<link rel="stylesheet" type="text/css" href="./CSS/header-footer.css">
+
+	<style type="text/css">
+		.contact-img{
+		height: 242px;	width: 100%;min-width: 1200px;background: url("./images/contact-us/contact-img.jpg") no-repeat;background-size: 100%;position: relative;
+		}
+		.map{
+			width: 960px;height: 247px;
+			margin:50px auto;overflow: hidden;
+		}
+		.map .map-img{
+			width: 100%;
+		}
+	</style>
+</head>
+<body>
+	<div class="header"></div>
+
+	<div class="contact-img">
+	</div>
+
+	<div class="news">
+		<p class="font1">联系我们</p>
+	 	<p class="font2">CONTACT US</p>
+		<div class="map">
+			<img class="map-img" src="./images/contact-us/map.jpg">
+
+		</div>
+
+		<div class="contact">
+			<div class="tele-phone">
+				<img src="">
+			</div>
+			<div class="time"></div>
+			<div class="address"></div>
+		</div>
+	</div>
+	<div class="footer"></div>
+	<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript">
+
+$(function(){
+	$(".header").load("header.html");
+	$(".footer").load("footer.html");
+	})
+
+</script>
+</body>
+</html>
