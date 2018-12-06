@@ -159,8 +159,8 @@ $(function(){
 					$(e).click(function(){
 
 						// 在用$(".news-ul li ").each(function(i,e)的情况下可以用下面的方法
-						$(e).children().addClass("blue");
-						$(e).siblings().children("a").removeClass("blue");
+						// $(e).children().addClass("blue");
+						// $(e).siblings().children("a").removeClass("blue");
 
 						 $(e).addClass("blue").parent("li").siblings().children("a").removeClass("blue");
 						 //li 中只有一个a, 所以 用children()也可以;
