@@ -61,14 +61,14 @@
 	         .news .font2{font-family: "Arial";font-size: 18px;color: #666666;margin-top: 10px;}
 	         .news .news-ul{list-style:none;width:800px;height:50px;margin:20px auto;text-align: center;}
 
-	         .news li{display:inline-block;width:70px;height: 20px;margin: 0px 10px;}
+	         .news li{display:inline-block;width:70px;height: 25px;margin: 0px 10px;}
 	         .news-ul a{
 	         	display:block;width: 100%;height: 25px;line-height: 25px;
 	         	text-decoration: none;
 	         	color: #8c8c8c;
 	         	font-size: 14px;
 	         }
-	        .news .blue,.news a:hover{  /*.blue优秀级比.new a 低,所以用.new .blue*/
+	        .news-ul .blue,.news-ul a:hover{  /*.blue优秀级比.new a 低,所以用.new .blue*/
 	         	background: #0089cf;
 	         	color: #ffffff;
 	         }

@@ -42,7 +42,7 @@
 	<p class="font1">新闻中心</p>
 	<p class="font2">NEWS CENTER</p>
 	<ul class="news-ul">
-		<li><a class="blue" href="javascript:;">全部</a></li>
+		<li><a href="javascript:;">全部</a></li>
 		<li><a href="javascript:;">行业新闻</a></li>
 		<li><a href="javascript:;">公司新闻</a></li>
 		<li><a href="javascript:;">媒体关注</a></li>
@@ -143,7 +143,37 @@ $(function(){
 		$("#header").load("header.html");
 		$("#footer").load("footer.html");
 	})
-	
+	$(function(){
+				// $(".news-ul a ").addClass("blue");
+				// $(".news-ul a ").each(function(i,e){
+				// 	$(e).click(function(){
+
+				// 		$(e)addClass("blue").siblings().removeClass("blue");上面获取的 .news-ul a 中,
+																	//  a为<li><a></li><li><a></li>
+																	// 所以此时的a与a之间并不是兄弟节点,用siblings()无法得到相应的节点
+				// 	})
+				// })
+
+				$(".news-ul a ").first().addClass("blue");
+				$(".news-ul a ").each(function(i,e){
+					$(e).click(function(){
+
+						// 在用$(".news-ul li ").each(function(i,e)的情况下可以用下面的方法
+						// $(e).children().addClass("blue");
+						// $(e).siblings().children("a").removeClass("blue");
+
+						 $(e).addClass("blue").parent("li").siblings().children("a").removeClass("blue");
+						 //li 中只有一个a, 所以 用children()也可以;
+						 // 这句话的意思是 点击的 a 添加 blue,并且父节点的兄弟节点(li)的子节点a删除  类blue;
+					})
+				})
+			})
+
+				// })
+
+				// $(".news a").first().addClass("checked");
+				// $(".xx a")获取哪个 类 的 a，那么便优先操作哪个的 checked,
+				// addclass是add (.xx checked) 
 </script>
 </body>
 </html>
