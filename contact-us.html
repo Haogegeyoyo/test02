@@ -16,6 +16,49 @@
 		.map .map-img{
 			width: 100%;
 		}
+		.contact{
+			width: 960px;height: 247px;
+			margin:50px auto;border: 2px solid #68acf0;border-width: 2px 0;//上下边框为2px，左右为0
+		}
+		.contact-box{
+			width:254px;height: 247px;float: left;margin: 30px 0 0 32px;
+		}
+		.contact-box2{
+			width: 130px;height: 70px;margin: 0 76px;
+		}
+		.contact-box2 h3{
+			font-size: 13.5px;text-align:left;color: #666666;margin: 5px 0;
+		}
+		.contact-box2 p,.message p{
+			font-size: 12px;text-align: left;color: #999999;margin: 5px 0;
+		}
+		.message {
+			width: 960px;height: 200px;
+			margin:50px auto;
+		}
+		.message .mes-left{
+			width: 355px; height: 200px; margin-left: 85px;float: left;
+		}
+		.message .mes-left li{
+			margin-top: 10px; 
+					}
+		.message .mes-right{
+			width: 500px; height: 200px;float: left;
+		}
+		.message h3{
+			font-size: 15px; color: #333333; 
+		}
+		
+		input[type="text"]{
+			width: 400px;height: 25px;
+		}	
+		input[name="code"]{
+			width:100px;
+		}
+		textarea{
+			width: 400px;
+		}
+
 	</style>
 </head>
 <body>
@@ -33,14 +76,77 @@
 		</div>
 
 		<div class="contact">
-			<div class="tele-phone">
-				<img src="">
+			<div class="contact-box">
+				<img src="./images/contact-us/phone.png">
+				<div class="contact-box2">
+					<h3>联系电话</h3>
+					<p>18922924703</p>
+					<p>86-0769-22412115</p>
+				</div>
 			</div>
-			<div class="time"></div>
-			<div class="address"></div>
+			<div class="contact-box">
+				<img src="./images/contact-us/time.png">
+				<div class="contact-box2">
+					<h3>服务时间</h3>
+					<p>上午: 09:00-12:00</p>
+					<p>下午: 14:00-18:00</p>
+				</div>
+			</div>
+			<div class="contact-box">
+				<img src="./images/contact-us/address.png">
+				<div class="contact-box2">
+					<h3>地点</h3>
+					<p>东莞市南城区</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div  class="message">
+
+		<div class="mes-left">
+			<h3> 中鼎有机硅胶材料公司</h3>
+			<p>地址：东莞市南城区</p>
+			<p>邮编：523073</p>
+			<p>电话：86-0769-2241215</p>
+			<p>手机：18922924703</p>
+			<p>传真：000-66668888</p>
+			<p>邮箱：123456789@qq.com</p>
+			<ul class="img2-ul" >
+				<li><img src="./images/footer/Wechat2.png"></li>
+				<li><img src="./images/footer/weibo2.png"></li>
+				<li><img src="./images/footer/QQ2.png"></li>
+			</ul>
+		</div>
+		<div class="mes-right">
+			<h3 class="right-h3">留言板</h3>
+			<form name="form1" method="post">
+				<table>
+
+			 		<tr>
+			 			<td><p>姓名：</td>
+			 			<td><input type="text" name="name"></p></td>
+			 		</tr>
+			 		<tr>
+			 			<td><p>电话：</td>
+			 			<td><input type="text" name="phone"></p></td>
+			 		</tr>
+			 		<tr>
+			 			<td><p>邮箱：</td>
+			 			<td><input type="text" name="E-mail" ></p></td>
+			 		<tr>
+			 			<td><p>内容：</td>
+			 			<td><textarea rows="3" cols="19" style="display: inline; vertical-align: middle;"></textarea></p></td>
+			 		</tr>
+			 		<tr>
+						<td><p>验证码：</td>
+						<td><input type="text" name="code" class="code"> <input type="submit" name="btn" value="提交"></p></td>
+					</tr>
+				</table>
+			</form>
 		</div>
 	</div>
 	<div class="footer"></div>
+
 	<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
 <script type="text/javascript">
 
